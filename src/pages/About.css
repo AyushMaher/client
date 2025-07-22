@@ -1,0 +1,77 @@
+/* About.css */
+
+:root {
+  --background: #ffffff;
+  --surface: #f8f9fa;
+  --text-main: #111111;
+  --text-muted: #555555;
+  --heading: #1f1c2c;
+  --highlight: #ffd700;
+  --accent: #e6c200;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-main);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.about-container {
+  padding: 3rem 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: var(--background);
+}
+
+.about-intro,
+.about-mission,
+.about-tech,
+.about-why {
+  margin-bottom: 3rem;
+}
+
+h1, h2 {
+  color: var(--heading);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  font-size: 1.05rem;
+  color: var(--text-main);
+}
+
+ul li {
+  margin-bottom: 0.75rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: var(--accent);
+  border-radius: 50%;
+  left: 0;
+  top: 0.6em;
+}
